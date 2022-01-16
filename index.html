@@ -7,11 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&family=New+Tegomin&family=Podkova:wght@700&family=Slabo+13px&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="https://pbs.twimg.com/profile_images/1465165387193016322/IwYM0hXG_400x400.jpg"/>    
+    <link rel="icon" type="image/png" href="https://pbs.twimg.com/profile_images/1465165387193016322/IwYM0hXG_400x400.jpg"/>
     <style>
         body {
             background-color: #FEFEFE;
             font-family: 'Roboto', sans-serif;
+        }
+        .nav {
+          overflow: hidden;
         }
         .nav ul {
             list-style: none;
@@ -47,6 +50,45 @@
         }
         .nav li a:hover {
             color: #4a788c;
+        }
+        .dropdown {
+            overflow: hidden;
+            float: right;
+        }
+        .dropdown .dropbtn {
+            font-size: x-large;
+            font-family: 'Roboto', sans-serif;
+            padding-top: 25px;
+            float: right;
+            padding-right: 20px;
+            border: none;
+            outline: none;
+            font-weight: 700;
+            color: #808080;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            color: #4a788c;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
         .intro h4 {
             padding-top: 60px;
@@ -90,25 +132,37 @@
         }
     </style>
   </head>
-  
+
   <body>
       <div class="nav">
         <ul>
+          <div>
             <li class="hfsp">
                 <a href="https://0xhfsp.github.io" style="text-decoration: none; color: #4a788c;">
                     0xhfsp
                 </a>
             </li>
-            <li class="about"><a href="https://jackbehrend.github.io/about" class="about">About</a></li>
+          </div>
+            <!-- <li class="about"><a href="https://jackbehrend.github.io/about" class="about">About</a></li>
             <li class="archive"><a href="https://jackbehrend.github.io/archive" class="archive">Archive</a></li>
-            <li class="twitter"><a href="https://twitter.com/0xhfsp" class="twitter">Twitter</a></li>
+            <li class="twitter"><a href="https://twitter.com/0xhfsp" class="twitter">Twitter</a></li> -->
+            <div class="dropdown">
+              <button class="dropbtn">☰
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Archive</a>
+                <a href="https://twitter.com/0xhfsp">Twitter</a>
+                <a href="#">About</a>
+              </div>
+            </div>
         </ul>
       </div>
 
       <div class="intro">
         <h4>
-            Documenting notable ideas and experiences. I am currently a 
-            computer science and math student at the University of Michigan. You can 
+            Documenting notable ideas and experiences. I am currently a
+            computer science and math student at the University of Michigan. You can
             learn a little more about me <a href="https://jackbehrend.github.io/about" style="color: #808080">here</a>.
             <br><br>
             Here are some of my favorite posts:
@@ -118,19 +172,19 @@
       <div class="posts">
         <h2><a href="post_first_test.html">First Test</a></h2>
         <h4>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            It has survived not only five centuries, but also the leap into electronic typesetting, 
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into electronic typesetting,
             remaining essentially unchanged... <span><h6><a href="post_first_test.html">More></a></h6></span>
         </h4>
         <h5>March 31, 2021</h5>
         <h2><a href="post_second_test.html">Second Test</a></h2>
         <h4>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            It has survived not only five centuries, but also the leap into electronic typesetting, 
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into electronic typesetting,
             remaining essentially unchanged... <span><h6><a href="post_second_test.html">More></a></h6></span>
         </h4>
         <h5>March 31, 2021</h5>
