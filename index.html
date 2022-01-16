@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&family=New+Tegomin&family=Podkova:wght@700&family=Slabo+13px&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="data:image/jpeg;base64,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"/>
+    
+    <style>
+        body {
+            background-color: #FEFEFE;
+            font-family: 'Roboto', sans-serif;
+        }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            height: 25px;
+            min-width: 50px;
+        }
+        .nav li {
+            padding-top: 25px;
+            float: right;
+            padding-right: 20px;
+            font-weight: 700;
+            font-size: large;
+            color: #808080;
+        }
+        .nav li.jack {
+            font-weight: 1000;
+            font-size: x-large;
+            color: #C80000;
+            float: left;
+            padding-left: 40px;
+            font-family: 'Josefin Slab', serif;
+            font-size: xx-large;
+        }
+        .nav li a.about {
+            padding-right: 40px;
+        }
+        .nav li a {
+            text-decoration: none;
+            color: #808080;
+        }
+        .nav li a:hover {
+            color: #C80000;
+        }
+        .intro h4 {
+            padding-top: 60px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 40px;
+            font-weight: lighter;
+        }
+        .posts {
+            padding-left: 40px;
+            font-weight: bolder;
+        }
+        .posts a:hover {
+            color: #C80000;
+        }
+        .posts a {
+            text-decoration: none;
+            color: black;
+        }
+        .posts h4 {
+            color: #808080;
+            font-weight: lighter;
+            padding-right: 40px;
+        }
+        .posts h5 {
+            color: #808080;
+            padding-bottom: 20px;
+        }
+        .posts h6 {
+            display: inline;
+        }
+        .more a {
+            padding-left: 40px;
+            color: #C80000;
+            text-decoration: none;
+            font-weight: bolder;
+            display: inline-block;
+        }
+        .more h4 {
+            padding-top: 50px;
+        }
+    </style>
+  </head>
+  
+  <body>
+      <div class="nav">
+        <ul>
+            <li class="jack">
+                <a href="https://jackbehrend.github.io" style="text-decoration: none; color: #C80000;">
+                    Jack
+                </a>
+            </li>
+            <li class="about"><a href="https://jackbehrend.github.io/about" class="about">About</a></li>
+            <li class="archive"><a href="https://jackbehrend.github.io/archive" class="archive">Archive</a></li>
+        </ul>
+      </div>
+
+      <div class="intro">
+        <h4>
+            Documenting notable ideas and experiences. I am currently a 
+            computer science and math student at the University of Michigan. You can 
+            learn a little more about me <a href="https://jackbehrend.github.io/about" style="color: #808080">here</a>.
+            <br><br>
+            Here are some of my favorite posts:
+        </h4>
+      </div>
+
+      <div class="posts">
+        <h2><a href="post_first_test.html">First Test</a></h2>
+        <h4>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, 
+            remaining essentially unchanged... <span><h6><a href="post_first_test.html">More></a></h6></span>
+        </h4>
+        <h5>March 31, 2021</h5>
+        <h2><a href="post_second_test.html">Second Test</a></h2>
+        <h4>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, 
+            remaining essentially unchanged... <span><h6><a href="post_second_test.html">More></a></h6></span>
+        </h4>
+        <h5>March 31, 2021</h5>
+      </div>
+
+      <div class="more">
+        <h4><a href="https://jackbehrend.github.io/archive">Read More</a></h4>
+      </div>
+  </body>
+</html>
