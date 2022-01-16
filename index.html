@@ -48,6 +48,49 @@
         .nav li a:hover {
             color: #4a788c;
         }
+      
+        .navbar {
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit; /* Important for vertical align on mobile phones */
+            margin: 0; /* Important for vertical align on mobile phones */
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #FEFEFE;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+      
         .intro h4 {
             padding-top: 60px;
             padding-left: 40px;
@@ -92,6 +135,20 @@
   </head>
   
   <body>
+      <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Archive</a>
+            <a href="https://twitter.com/0xhfsp">Twitter</a>
+            <a href="#">About</a>
+          </div>
+        </div>
+      </div>
+    
+      <!--
       <div class="nav">
         <ul>
             <li class="hfsp">
@@ -104,6 +161,7 @@
             <li class="twitter"><a href="https://twitter.com/0xhfsp" class="twitter">Twitter</a></li>
         </ul>
       </div>
+      -->
 
       <div class="intro">
         <h4>
